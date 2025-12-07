@@ -122,3 +122,28 @@ border-radius: clamp(5px, 1vw, 8px);
 .hero-content p { font-size: clamp(14px, 2vw, 16px); }
 .btn { font-size: clamp(12px, 2vw, 16px); padding: 8px 15px; }
 }
+
+
+/* ====== Enhanced Responsive Adjustments ====== */
+
+/* padding ومسافات أكبر للموبايل */
+@media (max-width: 480px) {
+.menu, .best-seller, .about-us, .gallery, .contact, .footer {
+padding: clamp(50px, 8vw, 120px) 5%;
+}
+
+/* العناوين الرئيسية أكبر على الموبايل */
+.hero-content h1 { font-size: clamp(28px, 7vw, 36px); }
+.hero-content p { font-size: clamp(16px, 3vw, 20px); }
+
+/* النصوص داخل العناصر */
+.menu-item h3, .best-item h3 { font-size: clamp(20px, 3vw, 24px); }
+.menu-item p, .best-item p { font-size: clamp(14px, 2.5vw, 16px); }
+.price { font-size: clamp(16px, 3vw, 20px); }
+
+/* الزرار أكبر شوية */
+.btn { font-size: clamp(14px, 3vw, 18px); padding: 10px 25px; }
+
+/* الصور تتوسع لتملأ العرض بدون قص */
+.menu-item img, .best-item img, .gallery-item img { height: auto; }
+}
