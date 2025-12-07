@@ -1,0 +1,124 @@
+/* ====== Global Styles ====== */
+
+* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+  body {background:#111; color:#fff;}
+
+/* ====== Navbar ====== */
+.navbar {width:100%; padding:20px 50px; background:rgba(0,0,0,0.6); display:flex; justify-content:space-between; align-items:center; position:fixed; top:0; left:0; z-index:100; backdrop-filter:blur(10px);}
+.logo {font-size:28px; font-weight:bold; color:#ffcc00; letter-spacing:1px;}
+.nav-links {display:flex; list-style:none; gap:30px;}
+.nav-links li a {text-decoration:none; color:#fff; font-size:18px; transition:0.3s;}
+.nav-links li a:hover {color:#ffcc00; text-shadow:0 0 10px #ffcc00;}
+
+/* ====== Hero Section ====== */
+.hero {height:100vh; background:url('https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg') center/cover no-repeat; display:flex; justify-content:center; align-items:center; text-align:center; padding-top:80px;}
+.hero-content h1 {font-size:60px; font-weight:bold; color:#ffcc00; text-shadow:0 0 15px #000; margin-bottom:10px;}
+.hero-content p {font-size:22px; color:#fff; margin-bottom:25px; text-shadow:0 0 10px #000;}
+.btn {padding:12px 30px; background:#ffcc00; color:#000; font-size:20px; border-radius:8px; text-decoration:none; transition:0.3s; box-shadow:0 0 10px #ffcc00;}
+.btn:hover {background:#fff; color:#000; transform:scale(1.05); box-shadow:0 0 25px #ffcc00;}
+
+/* ====== Menu Section ====== */
+.menu {padding:100px 50px; background:#111; text-align:center;}
+.section-title {font-size:45px; color:#ffcc00; margin-bottom:50px; text-shadow:0 0 15px #000;}
+.menu-container {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:35px;}
+.menu-item {background:#1a1a1a; padding:20px; border-radius:15px; transition:0.3s; box-shadow:0 0 15px rgba(0,0,0,0.4);}
+.menu-item:hover {transform:translateY(-8px); box-shadow:0 0 25px #ffcc00;}
+.menu-item img {width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:15px;}
+.menu-item h3 {font-size:24px; color:#ffcc00; margin-bottom:5px;}
+.menu-item p {font-size:16px; color:#ddd; margin-bottom:10px;}
+.price {display:inline-block; font-size:20px; font-weight:bold; color:#fff; background:#ffcc00; padding:6px 20px; border-radius:8px; margin-top:10px;}
+
+/* ====== Best Seller Section ====== */
+.best-seller {padding:100px 50px; background:#1a1a1a; text-align:center;}
+.best-container {display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
+.best-item {background:#111; padding:20px; border-radius:15px; width:280px; transition:0.3s; box-shadow:0 0 15px rgba(0,0,0,0.4);}
+.best-item:hover {transform:translateY(-8px); box-shadow:0 0 25px #ffcc00;}
+.best-item img {width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:15px;}
+.best-item h3 {font-size:22px; color:#ffcc00; margin-bottom:8px;}
+.best-item .price {font-size:18px; font-weight:bold; color:#fff; background:#ffcc00; padding:6px 20px; border-radius:8px;}
+
+/* ====== About Us Section ====== */
+.about-us {padding:100px 50px; background:#111; color:#fff;}
+.about-container {display:flex; flex-wrap:wrap; align-items:center; gap:50px; justify-content:center;}
+.about-text {flex:1; min-width:300px;}
+.about-text p {font-size:18px; line-height:1.6; margin-bottom:15px; color:#ddd;}
+.about-image {flex:1; min-width:300px;}
+.about-image img {width:100%; border-radius:15px; box-shadow:0 0 20px rgba(0,0,0,0.5);}
+
+/* ====== Gallery Section ====== */
+.gallery {padding:100px 50px; background:#1a1a1a; text-align:center;}
+.gallery-container {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:50px;}
+.gallery-item {overflow:hidden; border-radius:15px; transition:0.3s;}
+.gallery-item img {width:100%; height:200px; object-fit:cover; transition:transform 0.3s;}
+.gallery-item:hover img {transform:scale(1.1);}
+
+/* ====== Contact Section ====== */
+.contact {padding:100px 50px; background:#111; color:#fff; text-align:center;}
+.contact-container {display:flex; flex-wrap:wrap; gap:40px; justify-content:center; align-items:flex-start; margin-top:50px;}
+.contact-info {flex:1; min-width:300px; text-align:left;}
+.contact-info p {font-size:18px; margin-bottom:15px; color:#ddd;}
+.contact-map {flex:1; min-width:300px; border-radius:15px; overflow:hidden; box-shadow:0 0 20px rgba(0,0,0,0.5);}
+
+/* ====== Footer Section ====== */
+.footer {background:#1a1a1a; padding:30px 50px; text-align:center; color:#ddd;}
+.footer-container p {margin-bottom:10px;}
+.footer-container .socials {display:flex; justify-content:center; gap:20px;}
+.footer-container .socials a {text-decoration:none; color:#ffcc00; transition:0.3s;}
+.footer-container .socials a:hover {color:#fff; text-shadow:0 0 10px #ffcc00;}
+
+/* ====== Section Reveal Animation ====== */
+section {opacity:0; transform:translateY(50px); transition:0.8s ease-out;}
+section.show {opacity:1; transform:translateY(0);}
+
+/* ====== Hover Effects ====== */
+.menu-item:hover img, .best-item:hover img, .gallery-item:hover img {transform:scale(1.15);}
+
+/* ====== Responsive Enhancements ====== */
+
+/* الصور تبقى مرنة */
+img {max-width: 100%; height: auto;}
+
+/* نصوص قابلة للتكيف مع حجم الشاشة */
+h1, h2, h3, h4, p, .price, .btn {font-size: clamp(1rem, 1.5vw, 2.5rem);}
+
+/* الـ containers الرئيسية مرنة */
+.menu-container, .best-container, .gallery-container {
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: clamp(15px, 2vw, 35px);
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* padding داخلي مرن لكل الشاشات */
+.menu, .best-seller, .about-us, .gallery, .contact, .footer {
+padding: clamp(40px, 5vw, 100px) 5%;
+}
+
+/* navbar مرن */
+.navbar {padding: clamp(10px, 2vw, 20px) 5%;}
+
+/* زرار مرن */
+.btn {
+padding: clamp(8px, 1.5vw, 12px) clamp(20px, 3vw, 30px);
+font-size: clamp(14px, 1.5vw, 20px);
+border-radius: clamp(5px, 1vw, 8px);
+}
+
+/* Media Queries لتعديل layout لو الشاشة صغيرة */
+@media (max-width: 1024px) {
+.hero-content h1 { font-size: clamp(40px, 5vw, 50px); }
+.hero-content p { font-size: clamp(16px, 2vw, 20px); }
+}
+
+@media (max-width: 768px) {
+.nav-links { flex-direction: column; gap: 15px; }
+.menu-container, .best-container, .gallery-container {grid-template-columns: 1fr;}
+}
+
+@media (max-width: 480px) {
+.hero-content h1 { font-size: clamp(24px, 5vw, 30px); }
+.hero-content p { font-size: clamp(14px, 2vw, 16px); }
+.btn { font-size: clamp(12px, 2vw, 16px); padding: 8px 15px; }
+}
